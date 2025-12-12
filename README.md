@@ -1,16 +1,51 @@
-# React + Vite
+# **💻 Voosh News Bot \- Frontend**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The client-side interface for the Voosh News Chatbot. Built with React and SCSS, featuring a modern **Glassmorphism UI** that provides a seamless, app-like experience.
 
-Currently, two official plugins are available:
+## **🚀 Live Demo**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**App URL:** \[INSERT\_YOUR\_VERCEL\_URL\_HERE\] (e.g., https://voosh-frontend.vercel.app)
 
-## React Compiler
+## **✨ Features**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **💎 Glassmorphism Design:** A modern UI using translucent backgrounds, backdrop filters, and vibrant gradients implemented with pure SCSS.  
+* **⚡ Real-time Chat:** Optimistic UI updates ensure the interface feels instant while waiting for the AI response.  
+* **💾 Session Persistence:** Automatically loads chat history from the backend (Redis) on page reload.  
+* **🔄 Admin Controls:** Includes a "Refresh News" button that triggers server-side ingestion to update the knowledge base.  
+* **📱 Fully Responsive:** Optimized layout for mobile, tablet, and desktop screens.
 
-## Expanding the ESLint configuration
+## **🛠️ Tech Stack**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Framework:** React (Vite)  
+* **Styling:** SCSS (Sass), CSS Modules architecture  
+* **HTTP Client:** Axios  
+* **Icons:** FontAwesome (SVG/Inline)
+
+## **📂 Project Structure**
+
+The project follows a component-based architecture for maintainability:
+
+src/  
+├── components/      \# UI Building Blocks  
+│   ├── ChatHeader   \# Logo, Connection Status, Actions  
+│   ├── MessageList  \# Scrollable Chat Area, Bubbles, Typing Indicators  
+│   └── MessageInput \# Floating Input Capsule  
+├── services/        \# API Integration Layer (Axios)  
+├── App.jsx          \# Main Controller & State Management  
+└── App.scss         \# Global Styles & Variables
+
+## **🏃‍♂️ Local Setup**
+
+1. **Clone the repo:**  
+   git clone \<your-repo-url\>  
+   cd voosh-frontend
+
+2. **Install Dependencies:**  
+   npm install
+
+3. Configure Backend:  
+   Create a .env file in the root:  
+   VITE\_API\_URL=http://localhost:3000/api
+
+4. **Run Development Server:**  
+   npm run dev  
