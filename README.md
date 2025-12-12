@@ -4,7 +4,7 @@ The client-side interface for the Voosh News Chatbot. Built with React and SCSS,
 
 ## **🚀 Live Demo**
 
-**App URL:** \[INSERT\_YOUR\_VERCEL\_URL\_HERE\] (e.g., https://voosh-frontend.vercel.app)
+**App URL:** \https://voosh-bot-frontend.vercel.app/
 
 ## **✨ Features**
 
@@ -37,7 +37,7 @@ src/
 ## **🏃‍♂️ Local Setup**
 
 1. **Clone the repo:**  
-   git clone \<your-repo-url\>  
+   git clone https://github.com/Arman6117/voosh-bot-frontend 
    cd voosh-frontend
 
 2. **Install Dependencies:**  
